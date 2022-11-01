@@ -18,6 +18,11 @@ fun generateFullName(firstName: String, lastName: String): String {
     return "$firstName $lastName"
 }
 
+// Single Expression Function
+
+fun jumlah(a: Int, b:Int):Int = a + b
+
+
 fun main() {
     sayHello("Dwi", null)
     sayHello("Tim", "Henson")
@@ -29,4 +34,8 @@ fun main() {
     printName(lastName = "Nugroho", firstName = "Dwi")
 
     println(generateFullName("Dwi", "Nugroho"))
+
+    val total = jumlah(5, 6)
+
+    println(total)
 }
